@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Movie</title>
+</head>
+<body>
+    <h1>Create Product</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="title">Title</label><br>
+        <input type="text" name="title" id="title"><br>
+        <label for="director">Director</label><br>
+        <input type="text" name="director" id="director"><br>
+        <label for="release_year">Release Year</label><br>
+        <input type="date" name="title" id="release_year"><br>
+        <label for="genre">Genre</label><br>
+        <input type="text" name="genre" id="genre"><br><br>
+        <button type="submit">Create</button>
+
+    </form>
+</body>
+</html>
